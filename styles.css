@@ -14,7 +14,7 @@
 
 img {
   width: 100%;
-  display: block;
+  /*display: block;*/
 }
 
 /*<!-- Background: #F2F1E8
@@ -56,7 +56,6 @@ footer {
   position: fixed;
   width: 100%;
   top: 0;
-  height: 3.5em;
 
 
 }
@@ -85,31 +84,39 @@ a:hover {
     color: #CD5D67;
 }
 
-a:active {
+a:visited {
     color: #968772;
 }
 .nav-logo {
   width: 5%;
   padding: 10px;
 }
-h1, h2, h3 {
-  text-align: center;
-  margin-top: 10px;
 
-}
 h1 {
   font-size: 50px;
   margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 h2 {
   font-size: 35px;
   font-weight: lighter;
   margin-bottom: 30px;
+  text-align: center;
 }
 h3 {
   font-size: 25px;
   font-weight: lighter;
   margin-bottom: 30px;
+  margin-top: 30px;
+
+}
+h5 {
+  margin-top:75px;
+  font-size:60px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+  text-align: center;
 }
 p {
   line-height: 1.5;
@@ -200,10 +207,24 @@ justify-content: space-around;}
     background-size: cover;
 
   }
+/*/////////about//////*/
+.small_img{
+  background: url("images/birdhouse.jpg");
+  background-size: cover;
+  border-style: none;
+  margin-bottom: 25px;
+  height: 100px;
+  background-position: center;
+  width: 60%;
+}
+.intro p {
+  padding-left: 30px;
+}
 table {
     border-collapse: collapse;
-    width: auto;
+    width: 97%;
     border: 1px solid #dddddd;
+    margin-bottom: 30px;
 }
 
 td {
@@ -217,16 +238,83 @@ th {
 tr:nth-child(even) {
     background-color: #FEF9EC;
 }
+.aside_img {
+  background: url("images/background-1.jpg");
+  height: 100px;
+  background-size: cover;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
 aside {
+  margin-top: 93px;
+  margin-left: 10px;
+}
+.divider{
+  background: url("images/background-3.jpg");
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+  background-position: center;
+}
+.divider h3{
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+}
+
+.about {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.top_section{
+  padding: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.intro{
+  display: flex;
+}
+.bottom_section {
+  padding: 10px;
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+
 }
 /*//////////////////newsletter styles/////////////////////////////*/
 .signup-box{
   background: white;
+  padding: 20px;
+  width:40vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.signup-box h3,
+.signup-box h4 {
+  text-align: center;
 }
 .background {
   background-image: url("images/background-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 300px;
+  padding: 120px;
 }
+.inputs {
+  border-bottom: 2px solid grey;
+  padding-top: 30px;
+}
+#signupButton {
+padding: 15px 30px;
+color: white;
+background: #968772;
+text-align: center;
+display: block;
+ margin: 20px auto 8px auto;
+;}
